@@ -1,0 +1,83 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main {
+    background-color: rgb(197,197,197);
+    padding: 4px;
+    color: #202020;
+    grid-area: main;
+}
+aside {
+    grid-area: aside;
+}
+h1, h2 {
+    color: darkblue;
+}
+#headshot {
+    border: 1px solid #808080;
+    padding: 2px;
+    margin: 8px;
+    border-radius: 8px;
+    max-width: 50px;
+}
+img {
+    max-width: 500px;
+}
+.experience {
+    border: inset 1px;
+    margin-bottom: 4px;
+    padding: 4px;
+    background-color: white;
+    color: #222;
+}
+.experience .title {
+    font-weight: bold;
+}
+footer {
+    background-color: #202020;
+    color: lightblue;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    grid-area: footer;
+}
+#menu li {
+    display: inline;
+    padding: 8px;
+    background-color: rgb(43, 39, 39);
+}
+#menu li a {
+    color: white !important;
+    text-decoration: none;
+}
+#menu li.active {
+    background-color: darkslateblue;
+}
+#menu {
+    float: right;
+}
+header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    grid-area: header;
+}
+header #menu {
+    margin-left: auto;
+}
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-template-columns: auto 200px;
+    grid-gap: 8px;
+}
+#formInfo {
+    font-size: 14px;
+    font-style: italic;
+}
